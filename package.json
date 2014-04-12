@@ -1,9 +1,13 @@
 {
   "name": "layout-manager",
   "main": "./lib/layout-manager",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Layout Manager Package",
-  "activationEvents": ["layout-manager:maximize-active-pane","layout-manager:shrink-active-pane","layout-manager:enlarge-active-pane"],
+  "activationEvents": [
+    "layout-manager:maximize-active-pane",
+    "layout-manager:shrink-active-pane",
+    "layout-manager:enlarge-active-pane"
+  ],
   "repository": "https://github.com/santip/layout-manager",
   "license": "MIT",
   "engines": {
