@@ -15,7 +15,9 @@ Repeating this command will restore the active pane to its original size.
 Switching the active pane while maximized will make the newly active pane
 visible and the previous one hidden.
 
-![Maximize Example](https://github.com/santip/layout-manager/blob/master/examples/maximize.gif)
+*Default binding: Command + Shift + Enter*
+
+![Maximize Example](https://raw.githubusercontent.com/santip/layout-manager/master/examples/maximize.gif)
 
 ### Enlarge active pane
 Will modify the DOM in order to make the active pane slightly larger than
@@ -27,6 +29,10 @@ If inside a row, the pane only enlarges horizontally.
 
 If inside a column, the pane only enlarges vertically.
 
+*Default binding: Command + Alt + "="*
+
+![Enlarge Example](https://raw.githubusercontent.com/santip/layout-manager/master/examples/enlarge.gif)
+
 ### Shrink active pane
 
 Will modify the DOM in order to make the active pane slightly shorter than
@@ -37,6 +43,10 @@ Repeating this command allows to shrink the pane as much as desired.
 If inside a row, the pane only shrinks horizontally.
 
 If inside a column, the pane only shrinks vertically.
+
+*Default binding: Command + Alt + "-"*
+
+![Shrink Example](https://raw.githubusercontent.com/santip/layout-manager/master/examples/shrink.gif)
 
 ## Future commands
 
@@ -60,3 +70,5 @@ Some possible layouts are:
 
 The command should reorganize existing editors without closing them. Ideally
 it should aim to maintain as much of the current distribution as possible.
+
+# Feedback and pull requests are welcome.
