@@ -15,6 +15,8 @@ Repeating this command will restore the active pane to its original size.
 Switching the active pane while maximized will make the newly active pane
 visible and the previous one hidden.
 
+![Maximize Example](https://github.com/santip/layout-manager/blob/master/examples/maximize.gif)
+
 ### Enlarge active pane
 Will modify the DOM in order to make the active pane slightly larger than
 before (other panes will shrink proportionally).
