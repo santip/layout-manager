@@ -1,0 +1,16 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.overlayer':
+      'Enable layout-manager': 'layout-manager:toggle'
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'layout-manager'
+      'submenu': [
+        { 'label': 'Toggle', 'command': 'layout-manager:toggle' }
+      ]
+    ]
+  }
+]

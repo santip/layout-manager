@@ -1,0 +1,15 @@
+{
+  "name": "layout-manager",
+  "main": "./lib/layout-manager",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "activationEvents": ["layout-manager:toggle"],
+  "repository": "https://github.com/santip/atom-layout-manager",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+    "jquery": "2.1.0"
+  }
+}
