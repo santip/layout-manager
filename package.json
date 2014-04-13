@@ -1,7 +1,7 @@
 {
   "name": "layout-manager",
   "main": "./lib/layout-manager",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Maximize, move and resize (enlarge or shrink) panes",
   "activationEvents": [
     "layout-manager:maximize-active-pane",
