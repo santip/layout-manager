@@ -1,58 +1,60 @@
 # Layout Manager package
 
 This package provides useful commands to manage the layout of panes within
-an Atom editor window.
+an Atom editor window. Supports moving tabs between panes, resizing the active
+pane and toggling maximized state for the current tab.
 
-## Currently implemented commands
-
-### Maximize active pane
+## Maximize active pane
 Enlarges the active pane (the one that contains the active editor) to occupy
 the entire editor view. Other panes remain open only hidden behind the active
 one.
 
-Repeating this command will restore the active pane to its original size.
-
-Switching the active pane while maximized will make the newly active pane
-visible and the previous one hidden.
-
-*Default binding: Command + Shift + Enter*
-
 ![Maximize Example](https://raw.githubusercontent.com/santip/layout-manager/master/examples/maximize.gif)
 
-### Enlarge active pane
-Will modify the DOM in order to make the active pane slightly larger than
-before (other panes will shrink proportionally).
+Repeating this command will restore the active pane to its original size.
+Also, switching the active pane while maximized will make the newly active pane
+visible and the previous one hidden.
 
-Repeating this command allows to enlarge the pane as much as desired.
+| Command Palette | Command name        | Default key binding           |
+| -------------| ------------- |:-------------:|
+| Layout Manager: Maximize | `layout-manager:maximize`      | `cmd-shift-enter` |
 
-If inside a row, the pane only enlarges horizontally.
+&nbsp;
 
-If inside a column, the pane only enlarges vertically.
+## Enlarge / Shrink active pane
 
-*Default binding: Command + Alt + "="*
+Grows the active pane gradually shrinking other panes proportionally.
 
-![Enlarge Example](https://raw.githubusercontent.com/santip/layout-manager/master/examples/enlarge.gif)
+If inside a row, the pane only enlarges horizontally, inside a column, the pane only enlarges vertically.
 
-### Shrink active pane
+| Enlarge | Shrink |
+| ---- | --- |
+| ![Enlarge Example](https://raw.githubusercontent.com/santip/layout-manager/master/examples/enlarge.gif) | ![Shrink Example](https://raw.githubusercontent.com/santip/layout-manager/master/examples/shrink.gif) |
 
-Will modify the DOM in order to make the active pane slightly shorter than
-before (other panes will grow proportionally).
+&nbsp;
 
-Repeating this command allows to shrink the pane as much as desired.
+| Command Palette | Command name        | Default key binding           |
+| -------------| ------------- |:-------------:|
+| Layout Manager: Enlarge Active Pane | `layout-manager:enlarge-active-pane`      | `cmd-alt-=` |
+| Layout Manager: Shrink Active Pane | `layout-manager:shrink-active-pane`      | `cmd-alt--` |
 
-If inside a row, the pane only shrinks horizontally.
+## Move active tab to different panes
 
-If inside a column, the pane only shrinks vertically.
+Allows moving the active tab to the right, left, up or down. Also supports
+cycling the active tab to next/previous panes.
 
-*Default binding: Command + Alt + "-"*
+![Move Example](https://raw.githubusercontent.com/santip/layout-manager/master/examples/move-panes.gif)
 
-![Shrink Example](https://raw.githubusercontent.com/santip/layout-manager/master/examples/shrink.gif)
+| Command Palette | Command name        | Default key binding           |
+| -------------| ------------- |:-------------:|
+| Layout Manager: Move Pane Right    | `layout-manager:move-pane-right`    | `cmd-ctrl-shift-right` |
+| Layout Manager: Move Pane Left     | `layout-manager:move-pane-left`     | `cmd-ctrl-shift-left` |
+| Layout Manager: Move Pane Up       | `layout-manager:move-pane-up`       | `cmd-ctrl-shift-up` |
+| Layout Manager: Move Pane Down     | `layout-manager:move-pane-down`     | `cmd-ctrl-shift-down` |
+| Layout Manager: Move Pane Next     | `layout-manager:move-pane-next`     | None |
+| Layout Manager: Move Pane Previous | `layout-manager:move-pane-previous` | None |
 
-## Future commands
-
-### Move active editor to {right,left,up,down} pane
-
-Self explanatory
+## Wishlist (future features)
 
 ### Merge all editors in a single pane
 

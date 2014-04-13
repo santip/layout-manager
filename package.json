@@ -2,10 +2,16 @@
   "name": "layout-manager",
   "main": "./lib/layout-manager",
   "version": "0.1.1",
-  "description": "Maximize and resize (enlarge or shrink) panes",
+  "description": "Maximize, move and resize (enlarge or shrink) panes",
   "activationEvents": [
     "layout-manager:maximize-active-pane",
     "layout-manager:shrink-active-pane",
+    "layout-manager:move-pane-right",
+    "layout-manager:move-pane-left",
+    "layout-manager:move-pane-down",
+    "layout-manager:move-pane-up",
+    "layout-manager:move-pane-next",
+    "layout-manager:move-pane-previous",
     "layout-manager:enlarge-active-pane"
   ],
   "repository": "https://github.com/santip/layout-manager",
