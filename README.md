@@ -14,7 +14,9 @@ packages:
 - [Move panes](https://atom.io/packages/move-panes)
 
 New features will not be added to this package and only offered in individual
-packages.
+packages:
+
+- [Swap panes](https://atom.io/packages/swap-panes)
 
 ## Maximize active pane
 Enlarges the active pane (the one that contains the active editor) to occupy
