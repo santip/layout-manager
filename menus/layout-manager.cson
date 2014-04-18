@@ -1,15 +1,19 @@
 # See https://atom.io/docs/latest/creating-a-package#menus for more details
-'context-menu':
-  '.overlayer':
-      'Enable layout-manager': 'layout-manager:toggle'
-
 'menu': [
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'layout-manager'
+      'label': 'Layout Manager'
       'submenu': [
-        { 'label': 'Toggle', 'command': 'layout-manager:toggle' }
+        { 'label': 'Maximize / Restore', 'command': 'layout-manager:maximize' }
+        { 'label': 'Enlarge active pane', 'command': 'layout-manager:enlarge-active-pane' }
+        { 'label': 'Shrink active pane', 'command': 'layout-manager:shrink-active-pane' }
+        { 'label': 'Move pane right', 'command': 'layout-manager:move-right' }
+        { 'label': 'Move pane left', 'command': 'layout-manager:move-left' }
+        { 'label': 'Move pane up', 'command': 'layout-manager:move-up' }
+        { 'label': 'Move pane down', 'command': 'layout-manager:move-down' }
+        { 'label': 'Move pane next', 'command': 'layout-manager:move-next' }
+        { 'label': 'Move pane previous', 'command': 'layout-manager:move-previous' }
       ]
     ]
   }

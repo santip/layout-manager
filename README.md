@@ -4,6 +4,18 @@ This package provides useful commands to manage the layout of panes within
 an Atom editor window. Supports moving tabs between panes, resizing the active
 pane and toggling maximized state for the current tab.
 
+# NOTICE: this package has been divided in subpackages
+
+Each feature of this package is also offered in the following individual
+packages:
+
+- [Maximize Panes](https://atom.io/packages/maximize-panes)
+- [Resize panes](https://atom.io/packages/resize-panes)
+- [Move panes](https://atom.io/packages/move-panes)
+
+New features will not be added to this package and only offered in individual
+packages.
+
 ## Maximize active pane
 Enlarges the active pane (the one that contains the active editor) to occupy
 the entire editor view. Other panes remain open only hidden behind the active
