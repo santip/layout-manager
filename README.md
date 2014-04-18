@@ -29,7 +29,7 @@ visible and the previous one hidden.
 
 | Command name        | Default key binding           |
 | ------------- |:-------------:|
-| `layout-manager:maximize`      | `cmd-shift-enter` |
+| `layout-manager:maximize-active-pane`      | `cmd-shift-enter` |
 
 &nbsp;
 

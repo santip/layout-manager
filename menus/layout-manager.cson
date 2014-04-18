@@ -5,7 +5,7 @@
     'submenu': [
       'label': 'Layout Manager'
       'submenu': [
-        { 'label': 'Maximize / Restore', 'command': 'layout-manager:maximize' }
+        { 'label': 'Maximize / Restore', 'command': 'layout-manager:maximize-active-pane' }
         { 'label': 'Enlarge active pane', 'command': 'layout-manager:enlarge-active-pane' }
         { 'label': 'Shrink active pane', 'command': 'layout-manager:shrink-active-pane' }
         { 'label': 'Move pane right', 'command': 'layout-manager:move-right' }
