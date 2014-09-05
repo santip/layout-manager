@@ -47,10 +47,18 @@ module.exports =
   move: (orientation, delta) ->
     pane = atom.workspace.getActivePane()
     [axis,child] = @getAxis pane, orientation
-    if axis?
-      target = @getRelativePane axis, child, delta
+    splitNewPane = false
+
+    if !axis
+        newPaneDirection = if orientation == 'horizontal' then delta == 1 && 'right' || 'left' else delta == 1 && 'up' || 'down'
+        atom.workspaceView.getActivePane().trigger 'pane:split-' + newPaneDirection
+        [axis, child] = @getAxis pane, orientation
+        splitNewPane = true
+    target = @getRelativePane axis, child, delta
     if target?
       @swapEditor pane, target
+    if splitNewPane
+      target.removeItem target.getActiveItem()
 
   swapEditor: (source, target) ->
     editor = source.getActiveItem()
@@ -63,7 +71,7 @@ module.exports =
     axis = pane.parent
     child = pane
     while true
-      return unless axis.constructor.name == 'PaneAxis'
+      return [null, null] unless axis.constructor.name == 'PaneAxis'
       break if axis.orientation == orientation
       child = axis
       axis = axis.parent
