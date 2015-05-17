@@ -7,6 +7,9 @@
 html.maximize-pane-on {
   .panes {
     position:relative;
+    .pane:not(.active){
+      display:none;
+    }
     .pane.active {
       position:absolute;
       top: 0;
