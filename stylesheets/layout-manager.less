@@ -7,6 +7,9 @@
 html.maximize-pane-on {
   .panes {
     position:relative;
+    .pane:not(.active){
+      display:none;
+    }
     .pane.active {
       position:absolute;
       top: 0;
@@ -14,6 +17,8 @@ html.maximize-pane-on {
       left: 0;
       bottom: 0;
       z-index: 100;
+      
+      atom-pane-axis { display: none;}
     }
   }
 }
